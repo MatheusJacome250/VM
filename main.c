@@ -279,3 +279,22 @@ static int buscar_tlb(const simulador *vm, int pagina, int *indice) {
 
     return 1;
 }
+
+static int inserir_tlb(simulador *vm, int pagina, int posicao, politica escolha) {
+    int indice = 0;
+
+    for (int i = 0; i < TAM_TLB; i++) {
+        if (vm->tlb[i].pagina == -1) {
+            indice = i;
+            break;
+        }
+
+        if (prioridade(vm->tlb[i].tempo, escolha) <
+            prioridade(vm->tlb[indice].tempo, escolha)) {
+            indice = i;
+        }
+    }
+
+    vm->tlb[indice] = (entrada_tlb){pagina, posicao, {vm->acessos, vm->acessos}};
+    return indice;
+}
