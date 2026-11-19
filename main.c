@@ -238,3 +238,44 @@ static void *comparar_entrada(void *arg) {
     tarefa->achou = tarefa->entrada->pagina == tarefa->pagina;
     return NULL;
 }
+
+static int buscar_tlb(const simulador *vm, int pagina, int *indice) {
+    pthread_t threads[TAM_TLB];
+    tarefa_tlb tarefas[TAM_TLB];
+    int criadas = 0;
+
+    for (; criadas < TAM_TLB; criadas++) {
+        tarefas[criadas] = (tarefa_tlb){&vm->tlb[criadas], pagina, 0};
+
+        int erro = pthread_create(&threads[criadas], NULL, comparar_entrada,
+                                  &tarefas[criadas]);
+        if (erro != 0) {
+            fprintf(stderr, "Erro ao criar thread da TLB: %s.\n", strerror(erro));
+            break;
+        }
+    }
+
+    for (int i = 0; i < criadas; i++) {
+        int erro = pthread_join(threads[i], NULL);
+
+        if (erro != 0) {
+            fprintf(stderr, "Erro ao aguardar thread da TLB: %s.\n", strerror(erro));
+            exit(EXIT_FAILURE);
+        }
+    }
+
+    if (criadas != TAM_TLB) {
+        return 0;
+    }
+
+    *indice = -1;
+
+    for (int i = 0; i < TAM_TLB; i++) {
+        if (tarefas[i].achou) {
+            *indice = i;
+            break;
+        }
+    }
+
+    return 1;
+}
