@@ -49,3 +49,18 @@ typedef struct {
     int pagina;
     int achou;
 } tarefa_tlb;
+
+static int ler_politica(const char *texto, politica *escolha) {
+    if (strcmp(texto, "fifo") == 0) {
+        *escolha = FIFO;
+        return 1;
+    }
+
+    if (strcmp(texto, "lru") == 0) {
+        *escolha = LRU;
+        return 1;
+    }
+
+    return 0;
+}
+
