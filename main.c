@@ -232,3 +232,9 @@ static int carregar_pagina(simulador *vm, FILE *binario, int pagina, politica es
     vm->quadros[posicao] = (quadro){pagina, {vm->acessos, vm->acessos}};
     return posicao;
 }
+
+static void *comparar_entrada(void *arg) {
+    tarefa_tlb *tarefa = arg;
+    tarefa->achou = tarefa->entrada->pagina == tarefa->pagina;
+    return NULL;
+}
