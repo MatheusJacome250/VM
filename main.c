@@ -204,3 +204,31 @@ static int escolher_quadro(const simulador *vm, politica escolha) {
     return vitima;
 }
 
+static int carregar_pagina(simulador *vm, FILE *binario, int pagina, politica escolha) {
+    int posicao = escolher_quadro(vm, escolha);
+    long posicao_arquivo = (long)pagina * TAM_PAGINA;
+
+    if (fseek(binario, posicao_arquivo, SEEK_SET) != 0 ||
+        fread(vm->ram[posicao], 1, TAM_PAGINA, binario) != TAM_PAGINA) {
+        fprintf(stderr, "Erro ao ler a pagina %d do BACKING_STORE.bin.\n", pagina);
+        return -1;
+    }
+
+    if (vm->quadros_usados < NUM_QUADROS) {
+        vm->quadros_usados++;
+    } else {
+        int removida = vm->quadros[posicao].pagina;
+        vm->tabela_paginas[removida] = -1;
+
+        for (int i = 0; i < TAM_TLB; i++) {
+            if (vm->tlb[i].pagina == removida) {
+                vm->tlb[i].pagina = -1;
+                break;
+            }
+        }
+    }
+
+    vm->tabela_paginas[pagina] = posicao;
+    vm->quadros[posicao] = (quadro){pagina, {vm->acessos, vm->acessos}};
+    return posicao;
+}
