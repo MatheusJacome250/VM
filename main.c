@@ -173,8 +173,7 @@ static int ler_enderecos(const char *nome, uint32_t **enderecos, size_t *total) 
     return 1;
 }
 
-static void iniciar(simulador *vm)
-{
+static void iniciar(simulador *vm) {
     for (int i = 0; i < NUM_PAGINAS; i++) {
         vm->tabela_paginas[i] = -1;
     }
@@ -183,3 +182,25 @@ static void iniciar(simulador *vm)
         vm->tlb[i].pagina = -1;
     }
 }
+
+static size_t prioridade(historico tempo, politica escolha) {
+    return escolha == FIFO ? tempo.chegada : tempo.ultimo_uso;
+}
+
+static int escolher_quadro(const simulador *vm, politica escolha) {
+    if (vm->quadros_usados < NUM_QUADROS) {
+        return vm->quadros_usados;
+    }
+
+    int vitima = 0;
+
+    for (int i = 1; i < NUM_QUADROS; i++) {
+        if (prioridade(vm->quadros[i].tempo, escolha) <
+            prioridade(vm->quadros[vitima].tempo, escolha)) {
+            vitima = i;
+        }
+    }
+
+    return vitima;
+}
+
