@@ -172,3 +172,14 @@ static int ler_enderecos(const char *nome, uint32_t **enderecos, size_t *total) 
     *total = usados;
     return 1;
 }
+
+static void iniciar(simulador *vm)
+{
+    for (int i = 0; i < NUM_PAGINAS; i++) {
+        vm->tabela_paginas[i] = -1;
+    }
+
+    for (int i = 0; i < TAM_TLB; i++) {
+        vm->tlb[i].pagina = -1;
+    }
+}
