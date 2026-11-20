@@ -347,3 +347,16 @@ static int traduzir(simulador *vm, FILE *binario, FILE *saida, uint32_t endereco
 
     return 1;
 }
+
+static int escrever_estatisticas(FILE *saida, const simulador *vm) {
+    return fprintf(saida,
+                   "Number of Translated Addresses = %zu\r\n"
+                   "Page Faults = %zu\r\n"
+                   "Page Fault Rate = %.3f\r\n"
+                   "TLB Hits = %zu\r\n"
+                   "TLB Hit Rate = %.3f",
+                   vm->acessos, vm->faltas, (double)vm->faltas / vm->acessos,
+                   vm->acertos_tlb, (double)vm->acertos_tlb / vm->acessos) >= 0;
+}
+
+int main(int argc, char *argv[])
