@@ -359,4 +359,65 @@ static int escrever_estatisticas(FILE *saida, const simulador *vm) {
                    vm->acertos_tlb, (double)vm->acertos_tlb / vm->acessos) >= 0;
 }
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[]) {
+    politica politica_ram;
+    politica politica_tlb;
+
+    if (argc != 4 || !ler_politica(argv[2], &politica_ram) ||
+        !ler_politica(argv[3], &politica_tlb)) {
+        fprintf(stderr, "Uso: %s arquivo_enderecos fifo|lru fifo|lru\n", argv[0]);
+        return EXIT_FAILURE;
+    }
+
+    uint32_t *enderecos;
+    size_t total;
+
+    if (!ler_enderecos(argv[1], &enderecos, &total)) {
+        return EXIT_FAILURE;
+    }
+
+    FILE *binario = fopen("BACKING_STORE.bin", "rb");
+
+    if (binario == NULL) {
+        perror("BACKING_STORE.bin");
+        free(enderecos);
+        return EXIT_FAILURE;
+    }
+
+    FILE *saida = fopen("correct.txt", "wb");
+
+    if (saida == NULL) {
+        perror("correct.txt");
+        fclose(binario);
+        free(enderecos);
+        return EXIT_FAILURE;
+    }
+
+    simulador vm = {0};
+    iniciar(&vm);
+
+    int ok = fputs("\xEF\xBB\xBF", saida) != EOF;
+
+    if (!ok) {
+        perror("correct.txt");
+    }
+
+    for (size_t i = 0; ok && i < total; i++) {
+        ok = traduzir(&vm, binario, saida, enderecos[i],
+                      politica_ram, politica_tlb);
+    }
+
+    if (ok && !escrever_estatisticas(saida, &vm)) {
+        perror("correct.txt");
+        ok = 0;
+    }
+
+    if (fclose(saida) == EOF) {
+        perror("correct.txt");
+        ok = 0;
+    }
+
+    fclose(binario);
+    free(enderecos);
+    return ok ? EXIT_SUCCESS : EXIT_FAILURE;
+}
