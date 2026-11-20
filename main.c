@@ -298,3 +298,52 @@ static int inserir_tlb(simulador *vm, int pagina, int posicao, politica escolha)
     vm->tlb[indice] = (entrada_tlb){pagina, posicao, {vm->acessos, vm->acessos}};
     return indice;
 }
+
+static int traduzir(simulador *vm, FILE *binario, FILE *saida, uint32_t endereco, politica politica_ram, politica politica_tlb) {
+    int pagina = (int)((endereco >> 8) & 0xFFu);
+    int deslocamento = (int)(endereco & 0xFFu);
+    int indice;
+    int posicao;
+
+    vm->acessos++;
+
+    if (!buscar_tlb(vm, pagina, &indice)) {
+        return 0;
+    }
+
+    if (indice != -1) {
+        vm->acertos_tlb++;
+        posicao = vm->tlb[indice].quadro;
+        vm->tlb[indice].tempo.ultimo_uso = vm->acessos;
+    } else {
+        posicao = vm->tabela_paginas[pagina];
+
+        if (posicao == -1) {
+            vm->faltas++;
+            posicao = carregar_pagina(vm, binario, pagina, politica_ram);
+
+            if (posicao == -1) {
+                return 0;
+            }
+        }
+
+        indice = inserir_tlb(vm, pagina, posicao, politica_tlb);
+    }
+
+    vm->quadros[posicao].tempo.ultimo_uso = vm->acessos;
+    int fisico = posicao * TAM_PAGINA + deslocamento;
+    int valor = vm->ram[posicao][deslocamento];
+
+    if (valor >= 128) {
+        valor -= 256;
+    }
+
+    if (fprintf(saida, "Virtual address: %" PRIu32
+                " TLB: %d Physical address: %d Value: %d\r\n",
+                endereco, indice, fisico, valor) < 0) {
+        perror("correct.txt");
+        return 0;
+    }
+
+    return 1;
+}
