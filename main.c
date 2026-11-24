@@ -339,7 +339,7 @@ static int traduzir(simulador *vm, FILE *binario, FILE *saida, uint32_t endereco
     }
 
     if (fprintf(saida, "Virtual address: %" PRIu32
-                " TLB: %d Physical address: %d Value: %d\r\n",
+                " TLB: %d Physical address: %d Value: %d\n",
                 endereco, indice, fisico, valor) < 0) {
         perror("correct.txt");
         return 0;
@@ -350,10 +350,10 @@ static int traduzir(simulador *vm, FILE *binario, FILE *saida, uint32_t endereco
 
 static int escrever_estatisticas(FILE *saida, const simulador *vm) {
     return fprintf(saida,
-                   "Number of Translated Addresses = %zu\r\n"
-                   "Page Faults = %zu\r\n"
-                   "Page Fault Rate = %.3f\r\n"
-                   "TLB Hits = %zu\r\n"
+                   "Number of Translated Addresses = %zu\n"
+                   "Page Faults = %zu\n"
+                   "Page Fault Rate = %.3f\n"
+                   "TLB Hits = %zu\n"
                    "TLB Hit Rate = %.3f",
                    vm->acessos, vm->faltas, (double)vm->faltas / vm->acessos,
                    vm->acertos_tlb, (double)vm->acertos_tlb / vm->acessos) >= 0;
@@ -396,11 +396,7 @@ int main(int argc, char *argv[]) {
     simulador vm = {0};
     iniciar(&vm);
 
-    int ok = fputs("\xEF\xBB\xBF", saida) != EOF;
-
-    if (!ok) {
-        perror("correct.txt");
-    }
+    int ok = 1;
 
     for (size_t i = 0; ok && i < total; i++) {
         ok = traduzir(&vm, binario, saida, enderecos[i],
