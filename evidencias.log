@@ -1,0 +1,625 @@
+Script started on 2026-11-24 13:53:32-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="176" LINES="22"]
+[?2004h]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ date
+[?2004lTue Nov 24 13:53:46 -03 2026
+[?2004h]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ whoami
+[?2004lmathe
+[?2004h]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ pwd
+[?2004l/mnt/d/VM
+[?2004h]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ [7mmake clean && make && ./vm addresses.txt lru fifo &&[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake clean && make && ./vm addresses.txt lru fifo &&
+[?2004l[?2004h> [7mmake clean && make && ./vm addresses.txt lru fifo &&[27m
+[7mtail -n 5 correct.txt &&[27m
+[7mcmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&[27m
+[7mecho "Saída idêntica ao gabarito do professor."[27m[A[A[A[C[Cmake clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+[?2004lrm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+[?2004h]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ [H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ [7mmathe@Mjcome:/mnt/d/VM$ script -a evidencias.log[27m
+[7mScript started, output log file is 'evidencias.log'.[27m
+[7mmathe@Mjcome:/mnt/d/VM$ date[27m
+[7mTue Nov 24 13:53:46 -03 2026[27m
+[7mmathe@Mjcome:/mnt/d/VM$ whoami[27m
+[7mmathe[27m
+[7mmathe@Mjcome:/mnt/d/VM$ pwd[27m
+[7m/mnt/d/VM[27m
+[7mmathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&[27m
+[7m> make clean && make && ./vm addresses.txt lru fifo &&[27m
+[7mtail -n 5 correct.txt &&[27m
+[7mcmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&[27m
+[7mecho "Saída idêntica ao gabarito do professor."[27m
+[7mrm -f vm[27m
+[7mcc -std=gnu11 -Wall -Wextra -pthread main.c -o vm[27m
+[7mrm -f vm[27m
+[7mcc -std=gnu11 -Wall -Wextra -pthread main.c -o vm[27m
+[7mNumber of Translated Addresses = 1000[27m
+[7mPage Faults = 539[27m
+[7mPage Fault Rate = 0.539[27m
+[7mTLB Hits = 54[27m
+[7mTLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.[27m
+[7mmathe@Mjcome:/mnt/d/VM$ [27m[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+mathe@Mjcome:/mnt/d/VM$[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+mathe@Mjcome:/mnt/d/VM[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+mathe@Mjcome:/mnt/d/V[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+mathe@Mjcome:/mnt/d/[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+mathe@Mjcome:/mnt/d[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+mathe@Mjcome:/mnt/[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+mathe@Mjcome:/mnt[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+mathe@Mjcome:/mn[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+mathe@Mjcome:/m[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+mathe@Mjcome:/[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+mathe@Mjcome:[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+mathe@Mjcome[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+mathe@Mjcom[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+mathe@Mjco[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+mathe@Mjc[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+mathe@Mj[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+mathe@M[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+mathe@[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+mathe[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+math[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+mat[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+ma[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+m[H[2J]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ mathe@Mjcome:/mnt/d/VM$ script -a evidencias.log
+Script started, output log file is 'evidencias.log'.
+mathe@Mjcome:/mnt/d/VM$ date
+Tue Nov 24 13:53:46 -03 2026
+mathe@Mjcome:/mnt/d/VM$ whoami
+mathe
+mathe@Mjcome:/mnt/d/VM$ pwd
+/mnt/d/VM
+mathe@Mjcome:/mnt/d/VM$ make clean && make && ./vm addresses.txt lru fifo &&
+> make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number oScript started on 2026-11-24 13:56:27-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="176" LINES="22"]
+[?2004h]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ [7mdate[27m
+[7mwhoami[27m
+[7mpwd[27m
+[7mmake clean && make && ./vm addresses.txt lru fifo &&[27m
+[7mtail -n 5 correct.txt &&[27m
+[7mcmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&[27m
+[7mecho "Saída idêntica ao gabarito do professor."[27m[A[A[A[A[A[Adate
+whoami
+pwd
+make clean && make && ./vm addresses.txt lru fifo &&
+tail -n 5 correct.txt &&
+cmp correct.txt /mnt/c/Users/mathe/Downloads/correct.txt &&
+echo "Saída idêntica ao gabarito do professor."
+[?2004lTue Nov 24 13:56:31 -03 2026
+mathe
+/mnt/d/VM
+rm -f vm
+cc -std=gnu11 -Wall -Wextra -pthread main.c -o vm
+Number of Translated Addresses = 1000
+Page Faults = 539
+Page Fault Rate = 0.539
+TLB Hits = 54
+TLB Hit Rate = 0.054Saída idêntica ao gabarito do professor.
+[?2004h]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ exit
+[?2004lexit
+
+Script done on 2026-11-24 13:59:10-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-11-24 14:00:11-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="176" LINES="22"]
+[?2004h]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ date
+[?2004lTue Nov 24 14:00:14 -03 2026
+[?2004h]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ whoami
+[?2004lmathe
+[?2004h]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ pwd
+[?2004l/mnt/d/VM
+[?2004h]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ [7m./vm addresses.txt invalido fifo[27m
+[7mecho "Código de saída: $?"[27m
+
+[7m./vm arquivo-inexistente.txt lru fifo[27m
+[7mecho "Código de saída: $?"[27m[A[A[A[A./vm addresses.txt invalido fifo
+echo "Código de saída: $?"
+
+./vm arquivo-inexistente.txt lru fifo
+[1Pecho "Código de saída: $?[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7m./vm addresses.txt invalido fifo[27m
+[7mecho "Código de saída: $?"[27m[A./vm addresses.txt invalido fifo
+echo "Código de saída: $?"
+[?2004lUso: ./vm arquivo_enderecos fifo|lru fifo|lru
+Código de saída: 1
+[?2004h]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ [7m./vm arquivo-inexistente.txt lru fifo[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./vm arquivo-inexistente.txt lru fifo
+[?2004larquivo-inexistente.txt: No such file or directory
+[?2004h]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ [7mecho "Código de saída: $?"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "Código de saída: $?"
+[?2004lCódigo de saída: 1
+[?2004h]0;mathe@Mjcome: /mnt/d/VM[01;32mmathe@Mjcome[00m:[01;34m/mnt/d/VM[00m$ exit
+[?2004lexit
+
+Script done on 2026-11-24 14:02:28-03:00 [COMMAND_EXIT_CODE="0"]
